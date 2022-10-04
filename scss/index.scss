@@ -1,0 +1,93 @@
+@forward "base";
+
+.app-container {
+  width: min(95%, 80rem);
+  margin: 0 auto;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1.5em;
+  &__left {
+    display: flex;
+    align-items: center;
+    gap: 5em;
+  }
+
+  &__logo {
+  }
+
+  &__links {
+    list-style-type: none;
+    display: flex;
+    gap: 2em;
+    li {
+      cursor: pointer;
+      border-bottom: 4px solid transparent;
+      &:hover {
+        border-bottom: 4px solid #39d1dc;
+      }
+    }
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+  }
+
+  &__language {
+  }
+
+  &__cta {
+    border: none;
+    border: 2px solid #b7b7b7;
+    background-color: white;
+    padding: 0.5em 1em;
+    font-size: 1rem;
+    font-weight: 550;
+    border-radius: 0.35rem;
+  }
+}
+
+.hero {
+  background-color: rgb(237, 237, 237);
+  margin-top: 2em;
+  &__text {
+  }
+
+  &__title {
+    font-size: 3.5rem;
+  }
+
+  &__description {
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 2em;
+  }
+
+  &__cta {
+    border: none;
+    border: 2px solid #b7b7b7;
+    background-color: white;
+    padding: 1em 3em;
+    font-size: 1rem;
+    font-weight: 550;
+    border-radius: 0.35rem;
+  }
+
+  &__secondary {
+    border: none;
+    border: 2px solid #b7b7b7;
+    padding: 1em 3em;
+    font-size: 1rem;
+    font-weight: 550;
+    border-radius: 0.35rem;
+  }
+
+  &__img {
+  }
+}
