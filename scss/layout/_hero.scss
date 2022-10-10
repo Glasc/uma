@@ -1,0 +1,41 @@
+@use "../button" as btn;
+
+.hero {
+  .container {
+    background-color: rgb(237, 237, 237);
+    margin-top: 2em;
+    background: linear-gradient(
+      180deg,
+      rgb(238, 154, 229) 0%,
+      rgb(89, 97, 249) 100%
+    );
+    border-radius: 48px 48px 300px 48px;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+    align-items: center;
+    padding: 0 4em;
+    padding-bottom: 1.5em;
+  }
+  &__title {
+    font-size: 3.5rem;
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 2em;
+    margin-top: 2em;
+  }
+
+  &__cta {
+    @include btn.btn-lg;
+  }
+
+  &__secondary {
+    @include btn.btn-secondary-lg(var(--color-border));
+  }
+
+  &__img {
+  }
+}

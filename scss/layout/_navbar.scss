@@ -1,0 +1,46 @@
+@use "../button" as btn;
+
+.nav {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1.5em;
+  }
+
+  &__left {
+    display: flex;
+    align-items: center;
+    gap: 5em;
+  }
+
+  &__logo {
+  }
+
+  &__links {
+    display: flex;
+    gap: 2em;
+    li {
+      cursor: pointer;
+      border-bottom: 4px solid transparent;
+      transition: all 350ms;
+      &:hover {
+        transition: all 350ms;
+        border-bottom: 4px solid #39d1dc;
+      }
+    }
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+  }
+
+  &__language {
+  }
+
+  &__cta {
+    @include btn.btn-secondary-md(var(--color-border));
+    color: var(--text-neutral-lighter);
+  }
+}

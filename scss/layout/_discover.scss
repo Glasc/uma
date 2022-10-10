@@ -1,0 +1,41 @@
+@use "../button" as btn;
+
+.discover {
+  .container {
+    background: linear-gradient(
+      180deg,
+      rgb(238, 154, 229) 0%,
+      rgb(89, 97, 249) 100%
+    );
+    color: white;
+    padding: 0 4em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 2rem;
+  }
+  &__text {
+    & > * + * {
+      margin-top: 0.5em;
+    }
+    h2 {
+      font-size: 2.1rem;
+      color: #ffffffd9;
+    }
+    p {
+      font-size: 1.1rem;
+      color: #ffffffc5;
+    }
+    button {
+      @include btn.btn-lg;
+      margin-top: 2em;
+    }
+  }
+
+  &__image {
+    width: 350px;
+    display: block;
+    justify-self: flex-end;
+  }
+}

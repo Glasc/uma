@@ -1,0 +1,62 @@
+@use "../button" as btn;
+
+.footer {
+  background-color: #010851;
+  color: white;
+  padding: 5em 0;
+
+  .container:nth-of-type(1) {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 4em;
+  }
+
+  &__text {
+    display: grid;
+    gap: 1em;
+  }
+
+  &__form {
+    display: flex;
+    align-items: center;
+    gap: 1em; 
+    input {
+      background-color: rgb(242, 242, 242);
+      padding: 0.7em 0.5em;
+      font-size: 1rem;
+      outline: none;
+      border-radius: 0.35rem;
+    }
+
+    button {
+      border: none;
+      background-color: #ed80fd;
+      padding: 0.5em 3em;
+      font-size: 1rem;
+      font-weight: 550;
+      border-radius: 0.35rem;
+      color: rgb(246, 246, 246);
+      font-size: 1.1rem;
+    }
+  }
+
+  &__list {
+    font-weight: 350;
+    & > * + * {
+      margin-top: 0.5em;
+    }
+    li:nth-of-type(1) {
+      font-weight: 700;
+      font-size: 1.2rem;
+      margin-bottom: 2em;
+    }
+  }
+
+  &__reserved {
+    hr {
+      margin-bottom: 1.5em;
+    }
+    padding-top: 4em;
+  }
+}

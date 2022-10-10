@@ -1,0 +1,69 @@
+@use "../button" as btn;
+
+.feature {
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3em;
+  }
+  
+  &__card {
+    display: grid;
+    place-content: center;
+    font-weight: 750;
+    font-size: 1.1rem;
+
+    .container--card {
+      box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+      border: 1px solid rgb(247, 247, 247);
+      border-radius: 0.75rem;
+      display: inline-block;
+      padding: 2em;
+      background-color: white;
+    }
+
+    &:nth-of-type(1) {
+      & > div {
+        padding-left: 0;
+      }
+    }
+
+    img {
+      width: 75%;
+      border-radius: 0.75rem;
+    }
+
+    h2 {
+      font-size: 2.1rem;
+      color: var(--text-neutral);
+    }
+
+    p {
+      margin-top: 1em;
+      color: var(--text-neutral-lighter);
+      width: min(100%, 10ch);
+      margin-inline-end: auto;
+    }
+
+    &:nth-of-type(3) {
+      margin-top: 5em;
+    }
+
+    &:nth-of-type(1) {
+      padding-left: 0;
+      > div {
+        background-color: transparent;
+        box-shadow: none;
+        border: none;
+      }
+      h2 {
+        width: min(100%, 10ch);
+      }
+      p {
+        font-weight: 400;
+        width: min(100%, 25ch);
+      }
+    }
+  }
+}

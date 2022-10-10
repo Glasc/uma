@@ -5,71 +5,265 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+  <title>Uma</title>
   <link rel="stylesheet" href="./dist/index.css" />
 </head>
 
 <body>
-  <div class="container">
+  <div class="wrapper">
     <header>
-      <nav class="nav app-container">
-        <section class="nav__left">
-          <img class="nav__logo" src="./assets/LOGO@1x.png"></img>
-          <ul class="nav__links">
-            <li>General</li>
-            <li>Recursos</li>
-            <li>Quiénes somos</li>
-            <li>Planes</li>
-          </ul>
-        </section>
-        <section class="nav__right">
-          <p class="nav__language">English</p>
-          <button class="nav__cta">Iniciar Sesión</button>
-        </section>
+      <nav class="nav">
+        <div class="container">
+          <section class="nav__left">
+            <img class="nav__logo" src="./assets/LOGO@1x.png"></img>
+            <ul class="nav__links">
+              <li>General</li>
+              <li>Recursos</li>
+              <li>Quiénes somos</li>
+              <li>Planes</li>
+            </ul>
+          </section>
+          <section class="nav__right">
+            <p class="nav__language">English</p>
+            <button class="nav__cta">Iniciar Sesión</button>
+          </section>
+        </div>
       </nav>
 
-      <main class="hero app-container">
-        <section class="hero__text">
-          <h2 class="hero__title">Tú decides a dónde llegar</h2>
-          <p class="hero__description">Especialízate en las áreas con mayor demanda laboral y aprende lo que necesitas
-            para desarrollar tu perfil profesional</p>
-          <div class="hero__buttons">
-            <button class="hero__cta">Inscríbete</button>
-            <button class="hero__secondary">Explora</button>
-          </div>
-        </section>
+      <main class="hero">
+        <div class="container">
+          <section class="hero__text">
+            <h2 class="hero__title">Tú decides a dónde llegar</h2>
+            <p class="hero__description">Especialízate en las áreas con mayor demanda laboral y aprende lo que necesitas
+              para desarrollar tu perfil profesional</p>
+            <div class="hero__buttons">
+              <button class="hero__cta">Inscríbete</button>
+              <button class="hero__secondary">Explora</button>
+            </div>
+          </section>
 
-        <img class="hero__img" src="./assets/Saly-10@1x.png" alt="estudiante">
+          <img class="hero__img" src="./assets/Saly-10@1x.png" alt="estudiante">
+        </div>
       </main>
     </header>
-    <section class="learn app-container">
-      <div class="learn__card">
-        <div>
-          <h2>Aprende a tu ritmo desde hoy</h2>
-          <p>Clases prácticas concretas y especializadas en las áreas de mayor demanda laboral</p>
+    <section class="feature">
+      <div class="container">
+        <div class="feature__card">
+          <div class="container--card">
+            <h2>Aprende a tu ritmo desde hoy</h2>
+            <p>Clases prácticas concretas y especializadas en las áreas de mayor demanda laboral</p>
+          </div>
         </div>
-      </div>
-      <div class="learn__card">
-        <div>
-          <img src="./assets/feature.jpg" alt="feature">
-          <p>Horarios de estudio accesibles</p>
+        <div class="feature__card">
+          <div class="container--card">
+            <img src="./assets/Saly-26@2x.png" alt="feature">
+            <p>Horarios de estudio accesibles</p>
+          </div>
         </div>
-      </div>
-      <div class="learn__card">
-        <div>
-          <img src="./assets/feature.jpg" alt="feature">
-          <p>Tareas revisadas por docentes</p>
+        <div class="feature__card">
+          <div class="container--card">
+            <img src="./assets/Saly-25@2x.png" alt="feature">
+            <p>Tareas revisadas por docentes</p>
+          </div>
         </div>
-      </div>
-      <div class="learn__card">
-        <div>
-          <img src="./assets/feature.jpg" alt="feature">
-          <p>Plataforma de
-            internet
-            moderna</p>
+        <div class="feature__card">
+          <div class="container--card">
+            <img src="./assets/Saly-27@2x.png" alt="feature">
+            <p>Plataforma de
+              internet
+              moderna</p>
+          </div>
         </div>
       </div>
     </section>
+
+    <section class="experience">
+      <div class="container-thin">
+        <img class="experience__image" src="./assets/Saly-12@2x.png" alt="">
+        <div class="experience__text">
+          <h2>La mejor experiencia educativa <span>sin importar tu conexión</span></h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint reiciendis dolor fuga quia facere repellendus
+            asperiores nemo perferendis?</p>
+          <button>Inscríbete</button>
+        </div>
+      </div>
+
+      <div class="container-thin">
+        <div class="experience__text">
+          <h2>La mejor experiencia educativa <span>sin importar tu conexión</span></h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint reiciendis dolor fuga quia facere repellendus
+            asperiores nemo perferendis?</p>
+          <button>Inscríbete</button>
+        </div>
+        <img class="experience__image justify-self-end" src="./assets/Saly-16@2x.png" alt="">
+      </div>
+    </section>
+
+    <section class="plan">
+      <div class="container">
+        <div class="plan__text">
+          <h2>Planes a tu medida</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi, iusto dolor. Quae sapiente accusamus
+            eaque velit!</p>
+          <div class="plan__month">
+            <span>Mensual</span>
+            <img class="plan__toggle" src="./assets/toggle.png" alt="">
+            <span>Anual</span>
+          </div>
+        </div>
+
+        <div class="plan__cards">
+          <div class="plan__card">
+            <div class="plan__card-content">
+              <h3>Básico</h3>
+              <p>
+                Utiliza el método de pago de tu preferencia.
+              </p>
+              <p class="plan__price"><span>50$</span>/mes</p>
+              <ul>
+                <li>
+                  <img src="./assets/Ellipse 3@1x.png" alt="">
+                  <span>Lecciones en video</span>
+                </li>
+                <li>
+                  <img src="./assets/Ellipse 3@1x.png" alt="">
+                  <span>Lecciones en video</span>
+                </li>
+                <li>
+                  <img src="./assets/Ellipse 4@1x.png" alt="">
+                  <span>Lecciones en video</span>
+                </li>
+                <li>
+                  <img src="./assets/Ellipse 4@1x.png" alt="">
+                  <span>Lecciones en video</span>
+                </li>
+                <li>
+                  <img src="./assets/Ellipse 4@1x.png" alt="">
+                  <span>Lecciones en video</span>
+                </li>
+              </ul>
+              <button outline>Inscríbete</button>
+            </div>
+          </div>
+          <div class="plan__card">
+            <div class="plan__card-content">
+              <h3>Avanzado</h3>
+              <p>
+                Utiliza el método de pago de tu preferencia.
+              </p>
+              <p class="plan__price"><span>75$</span>/mes</p>
+              <ul>
+                <li>
+                  <img src="./assets/Ellipse 3@1x.png" alt="">
+                  <span>Lecciones en video</span>
+                </li>
+                <li>
+                  <img src="./assets/Ellipse 3@1x.png" alt="">
+                  <span>Lecciones en video</span>
+                </li>
+                <li>
+                  <img src="./assets/Ellipse 3@1x.png" alt="">
+                  <span>Lecciones en video</span>
+                </li>
+                <li>
+                  <img src="./assets/Ellipse 4@1x.png" alt="">
+                  <span>Lecciones en video</span>
+                </li>
+                <li>
+                  <img src="./assets/Ellipse 4@1x.png" alt="">
+                  <span>Lecciones en video</span>
+                </li>
+              </ul>
+              <button>Inscríbete</button>
+            </div>
+          </div>
+          <div class="plan__card">
+            <div class="plan__card-content">
+              <h3>Premium</h3>
+              <p>
+                Utiliza el método de pago de tu preferencia.
+              </p>
+              <p class="plan__price"><span>100$</span>/mes</p>
+              <ul>
+                <li>
+                  <img src="./assets/Ellipse 3@1x.png" alt="">
+                  <span>Lecciones en video</span>
+                </li>
+                <li>
+                  <img src="./assets/Ellipse 3@1x.png" alt="">
+                  <span>Lecciones en video</span>
+                </li>
+                <li>
+                  <img src="./assets/Ellipse 3@1x.png" alt="">
+                  <span>Lecciones en video</span>
+                </li>
+                <li>
+                  <img src="./assets/Ellipse 3@1x.png" alt="">
+                  <span>Lecciones en video</span>
+                </li>
+                <li>
+                  <img src="./assets/Ellipse 3@1x.png" alt="">
+                  <span>Lecciones en video</span>
+                </li>
+              </ul>
+              <button outline>Inscríbete</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="discover">
+      <div class="container">
+
+        <div class="discover__text">
+          <h2>Transforma tu vida y la de tus amigos con educación</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia, numquam alias.</p>
+          <button>Descubre cómo</button>
+        </div>
+
+        <img class="discover__image" src="./assets/Saly-31@2x.png" alt="">
+
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <section class="footer__text">
+          <img src="./assets/LOGO@1x.png" alt="">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsum quasi, sunt quod voluptate perferendis
+            provident?</p>
+          <form class="footer__form">
+            <input type="text" placeholder="Ingresa tu correo">
+            <button>Suscríbete</button>
+          </form>
+        </section>
+
+        <ul class="footer__list">
+          <li>Plataforma</li>
+          <li>Plataforma</li>
+          <li>Plataforma</li>
+          <li>Plataforma</li>
+        </ul>
+        <ul class="footer__list">
+          <li>Plataforma</li>
+          <li>Plataforma</li>
+          <li>Plataforma</li>
+          <li>Plataforma</li>
+        </ul>
+        <ul class="footer__list">
+          <li>Plataforma</li>
+          <li>Plataforma</li>
+          <li>Plataforma</li>
+          <li>Plataforma</li>
+        </ul>
+      </div>
+
+      <div class="footer__reserved container">
+        <hr />
+        <p>© UMA Platzi. Todos los derechos reservados.</p>
+      </div>
+    </footer>
   </div>
 </body>
 

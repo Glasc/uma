@@ -1,0 +1,31 @@
+@mixin button {
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 550;
+  border-radius: 0.35rem;
+}
+
+@mixin btn-md {
+  @include button;
+  background-color: #ed80fd;
+  padding: 0.5em 1.5em;
+  color: white;
+}
+
+@mixin btn-secondary-md($border-color: #ed80fd) {
+  @include button;
+  border: 1.70px solid $border-color;
+  background-color: transparent;
+  padding: 0.5em 1.5em;
+  color: white;
+}
+
+@mixin btn-lg {
+  @include btn-md;
+  padding: 1em 3em;
+}
+
+@mixin btn-secondary-lg($border-color: #ed80fd)  {
+  @include btn-secondary-md($border-color);
+  padding: 1em 3em;
+}

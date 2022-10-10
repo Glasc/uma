@@ -1,0 +1,98 @@
+@use "../button" as btn;
+
+.plan {
+  .container {
+  }
+
+  &__text {
+    text-align: center;
+    width: min(95%, 50ch);
+    margin-inline: auto;
+    font-size: 1.1rem;
+    & > * + * {
+      margin-top: 0.5em;
+    }
+    h2 {
+      font-size: 2.1rem;
+      color: var(--text-neutral);
+    }
+    color: var(--text-neutral-lighter);
+  }
+
+  &__cards {
+    margin-top: 3em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 8em;
+  }
+
+  &__card {
+  }
+
+  &__card-content {
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    padding: 4em;
+    border: 1px solid rgb(247, 247, 247);
+    color: var(--text-neutral-lighter);
+
+    h3 {
+      text-align: center;
+      font-size: 2.1rem;
+      color: var(--text-neutral);
+    }
+    p {
+      text-align: center;
+    }
+
+    ul {
+      display: grid;
+      gap: 1em;
+      font-weight: 550;
+      li {
+        display: flex;
+        gap: 0.5em;
+      }
+    }
+
+    button {
+      @include btn.btn-lg;
+      margin-top: 1.5em;
+      width: 100%;
+    }
+
+    button[outline] {
+      @include btn.btn-secondary-lg(var(--color-primary));
+      color: var(--color-primary);
+    }
+  }
+
+  &__price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em 0;
+
+    span {
+      display: block;
+      color: var(--color-primary);
+      font-size: 3rem;
+      font-weight: 700;
+    }
+  }
+  &__month {
+    display: grid;
+    grid-template-columns: 2fr auto 2fr;
+    place-items: center;
+    gap: 1em;
+    span:nth-of-type(1) {
+      justify-self: flex-end;
+    }
+    span:nth-of-type(2) {
+      justify-self: flex-start;
+    }
+    img {
+      width: 50px;
+    }
+  }
+}
