@@ -21,9 +21,9 @@
 
   &__cards {
     margin-top: 3em;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 8em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   &__card {
@@ -32,7 +32,7 @@
   &__card-content {
     background-color: rgb(255, 255, 255);
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
-    padding: 4em;
+    padding: 2em;
     border: 1px solid rgb(247, 247, 247);
     color: var(--text-neutral-lighter);
 
@@ -52,6 +52,10 @@
       li {
         display: flex;
         gap: 0.5em;
+        align-items: center;
+        img {
+          display: block;
+        }
       }
     }
 

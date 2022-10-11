@@ -14,7 +14,7 @@
 
 @mixin btn-secondary-md($border-color: #ed80fd) {
   @include button;
-  border: 1.70px solid $border-color;
+  border: 1.7px solid $border-color;
   background-color: transparent;
   padding: 0.5em 1.5em;
   color: white;
@@ -25,7 +25,7 @@
   padding: 1em 3em;
 }
 
-@mixin btn-secondary-lg($border-color: #ed80fd)  {
+@mixin btn-secondary-lg($border-color: #ed80fd) {
   @include btn-secondary-md($border-color);
   padding: 1em 3em;
 }
